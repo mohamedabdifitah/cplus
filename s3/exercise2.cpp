@@ -1,76 +1,84 @@
-/*
 
-solution in while loop
+#include <iostream>
+using namespace std;
 
-1:
-
-int i,sum=0;
-while (i<= 10){
-    sum= sum +i;
-    i++;
-}
-cout << sum;
-
-___________________________
-
-2:
-
-
-
-int i = 1;
-int x = 0;
-int y = 0;
-int power = 1;
-cout << "enter x: ";
-cin >> x;
-cout << "enter y: ";
-cin >> y;
-
-while(i <= y){
-    power *= x;
-    cout << power << " ";
-    i++;
-}
-________________________________--
-
-3:
-
-
-int i = 1;
-int la = 0;
-int sml = 0;
-int num = 0;
-while (i <= 10){
-    cout << "enter a number: ";
-    cin >> num;
-    if(num > la){
-        la = num;
-    }
-    else if(num < sml ){
-        sml = num;
-    }
+/* ================================|| Basic Server Packages ||================================ */
+void question1(){
+    int i,sum=0;
+    cout <<"/* ================================|| question 1 ||================================ */\n"<<endl;
     
-    cout << "the largst number is: " << la << endl;
-    cout << "the smallest number is: " << sml;
-    
-    i++;
-}
-------------------------------------------
-4:
-
-int i = 1;
-while(i <= 5){
-    cout << i << "\t" << 10*i << "\t" << i*100 << "\t" << i*1000<< endl;
-    i++;
+    // cout<<"to stop the loop enter number 10"<<endl;
+    while (i<= 10){
+        sum= sum +i;
+        i++;
     }
+    cout << sum<<endl;
+    cout <<"/* ================================================================================= */\n\n\n"<<endl;
 
-____________________________
-
-5:
+}
 
 
-int num = 0;
-int i = 1;
+
+void question2(){
+    int i = 1;
+    int x = 0;
+    int y = 0;
+    cout <<"/* ================================|| question 2 ||================================ */"<<endl;
+    int power = 1;
+    cout << "enter x: ";
+    cin >> x;
+    cout << "enter y: ";
+    cin >> y;
+    while(i <= y){
+        power *= x;
+        cout << power << " ";
+        i++;
+        // cout << "tip : to stop the loop i <=y"<<endl;
+    }
+    cout <<"/* ================================================================================= */ \n\n\n"<<endl;
+
+}
+
+void question3(){
+
+    int i = 1;
+    int la = 0;
+    int sml = 0;
+    int num = 0;
+    cout <<"/* ================================|| question 3 ||================================ */"<<endl;
+    while (i <= 10){
+        cout << "enter a number: ";
+        cin >> num;
+        if(num > la){
+            la = num;
+        }
+        else if(num < sml ){
+            sml = num;
+        }
+        
+        cout << "the largst number is: " << la << endl;
+        cout << "the smallest number is: " << sml;
+        
+        i++;
+    }
+    cout <<"/* ================================================================================= */\n\n\n"<<endl;
+}
+
+void question4(){
+    cout <<"/* ================================|| question 4 ||================================ */"<<endl;
+    int i = 1;
+    while(i <= 5){
+        cout << i << "\t" << 10*i << "\t" << i*100 << "\t" << i*1000<< endl;
+        i++;
+    }
+    cout <<"/* ================================================================================= */\n\n\n"<<endl;
+}
+
+void question5(){
+
+    cout <<"/* ================================|| question 5 ||================================ */"<<endl;
+    int num = 0;
+    int i = 1;
 
     while(i <= 10){
         cout << "enter the number";
@@ -87,121 +95,31 @@ int i = 1;
         }
         i++;
     }
-
----------------------------------
-6:
-
-
-int i = 1;
-int odd = 1;
-while (i <= 15){
-    if (i % 2 == 1){
-        odd = odd + i; 
-    }
-    i++;
-    }
-    cout << " this is the sum of odds" << odd;
-*/
-__________________________________________
-
-/*
-
-
-
-solutions in for loop.
-
-
-
-1:
-int i,sum=0;
-for ( i = 1; i<= 10; i++){
-    sum= sum +i;
-}
-cout << sum;
-----------------------------
-2:
-
-int i = 1;
-int x = 0;
-int y = 0;
-int power = 1;
-cout << "enter x: ";
-cin >> x;
-cout << "enter y: ";
-cin >> y;
-
-for(i = 1; i <= y; i++){
-    power *= x;
-    cout << power << " ";
+    cout <<"/* ================================================================================= */\n\n\n"<<endl;
 }
 
---------------------------
+void question6(){
+    cout <<"/* ================================|| question 6 ||================================ */"<<endl;
 
-3:
-
-int i = 0;
-int la = 0;
-int sml;
-int num = 0;
-for (i = 1; i <= 10; i++){
-    cout << "enter a number: ";
-    cin >> num;
-    if(num > la){
-        la = num;
-    }
-    else if(num < sml ){
-        sml = num;
-    }
-    
-    cout << "the largst number is: " << la << endl;
-    cout << "the smallest number is: " << sml;
-      
-}
-
----------------------------------
-
-4:
-
-int i = 1;
-for(i = 1; i <= 5; i++ ){
-    cout << i << "\t" << 10*i << "\t" << i*100 << "\t" << i*1000<< endl;
-    }
-
-----------------------------------
-
-5:
-
-int num = 0;
-int i = 1;
-
-    for (i = 1; i <= 10; i++){
-        cout << "enter the number";
-        cin >> num;
-        if(num == 1){
-            cout << "pass"<<endl;
+    int i = 1;
+    int odd = 1;
+    while (i <= 15){
+        if (i % 2 == 1){
+            odd = odd + i; 
         }
-        else if (num == 2){
-            cout << "fail"<< endl;
-        }
-
-        else{
-            cout <<"enter valid input"<<endl;
-        }
+        i++;
     }
+    cout << " this is the sum of odds"<<odd<<endl;
+    cout <<"/* ================================================================================= */\n\n\n"<<endl;
 
------------------------------------
-
-6:
-
-int i = 1;
-int odd = 1;
-for (i = 1;i <= 15; i++){
-    if (i % 2 == 1){
-        odd = odd + i; 
-    }
-    cout << " this is the sum of odds" << odd;
-    
 }
-cout << odd;
 
-*/
+int main(){
+    question1();
+    question2();
+    question3();
+    question4();
+    question5();
+    question6();
+    return 0;
+}
